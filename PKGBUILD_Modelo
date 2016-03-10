@@ -1,0 +1,16 @@
+# Contributor: Seu nome
+
+pkgname=nome-do-pacote
+pkgver=versão
+pkgrel=release
+pkgdesc="Descrição do pacote"
+arch=("arquitetura")
+url="url do software"
+depends=("dependências")
+license=("Licença")
+source=(url do source)
+md5sums=("md5sum do source")
+
+build() {
+instruções de compilação
+} 

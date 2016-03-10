@@ -1,0 +1,18 @@
+# Maintainer: markitos66
+# Contributor: holmeslinux <holmes_holmes@live.com>
+
+pkgname=xcursor-rezowhite
+pkgver=1.01.00
+pkgrel=1
+pkgdesc="RezoWhite Multisized"
+url="https://www.dropbox.com/s/kresy9w96tzzew3/RezoWhite.tgz"
+depends=('libxcursor')
+license=('GPL')
+arch=('any')
+source=("http://kde-look.org/CONTENT/content-files/165371-Breeze.tar.gz")
+
+package() {
+  mkdir -p ${pkgdir}/usr/share/icons
+  cp -R ${srcdir}/RezoWhite ${pkgdir}/usr/share/icons/
+}
+md5sums=('7deef9ac1572296be2050e467830f1bd')
